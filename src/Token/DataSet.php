@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Token;
+namespace KaziRayhan\JWT\Token;
 
 use function array_key_exists;
 

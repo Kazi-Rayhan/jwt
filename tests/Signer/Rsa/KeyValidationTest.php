@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Tests\Signer\Rsa;
+namespace KaziRayhan\JWT\Tests\Signer\Rsa;
 
-use Lcobucci\JWT\Signer\CannotSignPayload;
-use Lcobucci\JWT\Signer\Key\InMemory;
-use Lcobucci\JWT\Signer\OpenSSL;
+use KaziRayhan\JWT\Signer\CannotSignPayload;
+use KaziRayhan\JWT\Signer\Key\InMemory;
+use KaziRayhan\JWT\Signer\OpenSSL;
 use PHPUnit\Framework\Attributes as PHPUnit;
 use PHPUnit\Framework\TestCase;
 

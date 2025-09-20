@@ -6,11 +6,11 @@ To issue new tokens you must create a new token builder, customise it, and ask i
 <?php
 declare(strict_types=1);
 
-use Lcobucci\JWT\Encoding\ChainedFormatter;
-use Lcobucci\JWT\Encoding\JoseEncoder;
-use Lcobucci\JWT\Signer\Key\InMemory;
-use Lcobucci\JWT\Signer\Hmac\Sha256;
-use Lcobucci\JWT\Token\Builder;
+use KaziRayhan\JWT\Encoding\ChainedFormatter;
+use KaziRayhan\JWT\Encoding\JoseEncoder;
+use KaziRayhan\JWT\Signer\Key\InMemory;
+use KaziRayhan\JWT\Signer\Hmac\Sha256;
+use KaziRayhan\JWT\Token\Builder;
 
 require 'vendor/autoload.php';
 
@@ -50,11 +50,11 @@ Once you've created a token, you're able to retrieve its data and convert it to 
 <?php
 declare(strict_types=1);
 
-use Lcobucci\JWT\Encoding\ChainedFormatter;
-use Lcobucci\JWT\Encoding\JoseEncoder;
-use Lcobucci\JWT\Signer\Key\InMemory;
-use Lcobucci\JWT\Signer\Hmac\Sha256;
-use Lcobucci\JWT\Token\Builder;
+use KaziRayhan\JWT\Encoding\ChainedFormatter;
+use KaziRayhan\JWT\Encoding\JoseEncoder;
+use KaziRayhan\JWT\Signer\Key\InMemory;
+use KaziRayhan\JWT\Signer\Hmac\Sha256;
+use KaziRayhan\JWT\Token\Builder;
 
 require 'vendor/autoload.php';
 

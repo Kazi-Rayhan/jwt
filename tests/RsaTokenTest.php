@@ -1,22 +1,22 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Tests;
+namespace KaziRayhan\JWT\Tests;
 
-use Lcobucci\JWT\Configuration;
-use Lcobucci\JWT\Encoding;
-use Lcobucci\JWT\Signer\InvalidKeyProvided;
-use Lcobucci\JWT\Signer\Key\InMemory;
-use Lcobucci\JWT\Signer\OpenSSL;
-use Lcobucci\JWT\Signer\Rsa;
-use Lcobucci\JWT\Signer\Rsa\Sha256;
-use Lcobucci\JWT\Signer\Rsa\Sha512;
-use Lcobucci\JWT\SodiumBase64Polyfill;
-use Lcobucci\JWT\Token;
-use Lcobucci\JWT\Validation\Constraint\SignedWith;
-use Lcobucci\JWT\Validation\ConstraintViolation;
-use Lcobucci\JWT\Validation\RequiredConstraintsViolated;
-use Lcobucci\JWT\Validation\Validator;
+use KaziRayhan\JWT\Configuration;
+use KaziRayhan\JWT\Encoding;
+use KaziRayhan\JWT\Signer\InvalidKeyProvided;
+use KaziRayhan\JWT\Signer\Key\InMemory;
+use KaziRayhan\JWT\Signer\OpenSSL;
+use KaziRayhan\JWT\Signer\Rsa;
+use KaziRayhan\JWT\Signer\Rsa\Sha256;
+use KaziRayhan\JWT\Signer\Rsa\Sha512;
+use KaziRayhan\JWT\SodiumBase64Polyfill;
+use KaziRayhan\JWT\Token;
+use KaziRayhan\JWT\Validation\Constraint\SignedWith;
+use KaziRayhan\JWT\Validation\ConstraintViolation;
+use KaziRayhan\JWT\Validation\RequiredConstraintsViolated;
+use KaziRayhan\JWT\Validation\Validator;
 use PHPUnit\Framework\Attributes as PHPUnit;
 use PHPUnit\Framework\TestCase;
 

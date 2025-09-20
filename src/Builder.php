@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Lcobucci\JWT;
+namespace KaziRayhan\JWT;
 
 use DateTimeImmutable;
-use Lcobucci\JWT\Encoding\CannotEncodeContent;
-use Lcobucci\JWT\Signer\CannotSignPayload;
-use Lcobucci\JWT\Signer\Ecdsa\ConversionFailed;
-use Lcobucci\JWT\Signer\InvalidKeyProvided;
-use Lcobucci\JWT\Signer\Key;
-use Lcobucci\JWT\Token\RegisteredClaimGiven;
+use KaziRayhan\JWT\Encoding\CannotEncodeContent;
+use KaziRayhan\JWT\Signer\CannotSignPayload;
+use KaziRayhan\JWT\Signer\Ecdsa\ConversionFailed;
+use KaziRayhan\JWT\Signer\InvalidKeyProvided;
+use KaziRayhan\JWT\Signer\Key;
+use KaziRayhan\JWT\Token\RegisteredClaimGiven;
 
 /** @immutable */
 interface Builder

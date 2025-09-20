@@ -1,17 +1,17 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Tests\Token;
+namespace KaziRayhan\JWT\Tests\Token;
 
 use DateTimeImmutable;
-use Lcobucci\JWT\Decoder;
-use Lcobucci\JWT\Token\DataSet;
-use Lcobucci\JWT\Token\InvalidTokenStructure;
-use Lcobucci\JWT\Token\Parser;
-use Lcobucci\JWT\Token\Plain;
-use Lcobucci\JWT\Token\RegisteredClaims;
-use Lcobucci\JWT\Token\Signature;
-use Lcobucci\JWT\Token\UnsupportedHeaderFound;
+use KaziRayhan\JWT\Decoder;
+use KaziRayhan\JWT\Token\DataSet;
+use KaziRayhan\JWT\Token\InvalidTokenStructure;
+use KaziRayhan\JWT\Token\Parser;
+use KaziRayhan\JWT\Token\Plain;
+use KaziRayhan\JWT\Token\RegisteredClaims;
+use KaziRayhan\JWT\Token\Signature;
+use KaziRayhan\JWT\Token\UnsupportedHeaderFound;
 use PHPUnit\Framework\Attributes as PHPUnit;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;

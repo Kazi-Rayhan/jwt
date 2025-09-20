@@ -1,15 +1,15 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Tests;
+namespace KaziRayhan\JWT\Tests;
 
 use DateTimeImmutable;
-use Lcobucci\JWT\Configuration;
-use Lcobucci\JWT\Encoding;
-use Lcobucci\JWT\Signer\Key\InMemory;
-use Lcobucci\JWT\SodiumBase64Polyfill;
-use Lcobucci\JWT\Token;
-use Lcobucci\JWT\Token\Plain;
+use KaziRayhan\JWT\Configuration;
+use KaziRayhan\JWT\Encoding;
+use KaziRayhan\JWT\Signer\Key\InMemory;
+use KaziRayhan\JWT\SodiumBase64Polyfill;
+use KaziRayhan\JWT\Token;
+use KaziRayhan\JWT\Token\Plain;
 use PHPUnit\Framework\Attributes as PHPUnit;
 use PHPUnit\Framework\TestCase;
 

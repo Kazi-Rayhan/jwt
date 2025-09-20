@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Token;
+namespace KaziRayhan\JWT\Token;
 
 use DateTimeInterface;
-use Lcobucci\JWT\UnencryptedToken;
+use KaziRayhan\JWT\UnencryptedToken;
 
 use function in_array;
 

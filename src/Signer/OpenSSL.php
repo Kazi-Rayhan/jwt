@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Signer;
+namespace KaziRayhan\JWT\Signer;
 
-use Lcobucci\JWT\Signer;
+use KaziRayhan\JWT\Signer;
 use OpenSSLAsymmetricKey;
 
 use function array_key_exists;

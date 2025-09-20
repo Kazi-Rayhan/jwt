@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Encoding;
+namespace KaziRayhan\JWT\Encoding;
 
 use JsonException;
-use Lcobucci\JWT\Decoder;
-use Lcobucci\JWT\Encoder;
-use Lcobucci\JWT\SodiumBase64Polyfill;
+use KaziRayhan\JWT\Decoder;
+use KaziRayhan\JWT\Encoder;
+use KaziRayhan\JWT\SodiumBase64Polyfill;
 
 use function json_decode;
 use function json_encode;

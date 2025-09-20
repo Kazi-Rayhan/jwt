@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Signer\Ecdsa;
+namespace KaziRayhan\JWT\Signer\Ecdsa;
 
 use InvalidArgumentException;
-use Lcobucci\JWT\Exception;
+use KaziRayhan\JWT\Exception;
 
 final class ConversionFailed extends InvalidArgumentException implements Exception
 {

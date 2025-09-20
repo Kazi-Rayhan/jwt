@@ -1,16 +1,16 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Tests\Validation\Constraint;
+namespace KaziRayhan\JWT\Tests\Validation\Constraint;
 
 use DateInterval;
 use DateTimeImmutable;
-use Lcobucci\Clock\Clock;
-use Lcobucci\Clock\FrozenClock;
-use Lcobucci\JWT\Token\RegisteredClaims;
-use Lcobucci\JWT\Validation\Constraint;
-use Lcobucci\JWT\Validation\Constraint\LeewayCannotBeNegative;
-use Lcobucci\JWT\Validation\ConstraintViolation;
+use KaziRayhan\Clock\Clock;
+use KaziRayhan\Clock\FrozenClock;
+use KaziRayhan\JWT\Token\RegisteredClaims;
+use KaziRayhan\JWT\Validation\Constraint;
+use KaziRayhan\JWT\Validation\Constraint\LeewayCannotBeNegative;
+use KaziRayhan\JWT\Validation\ConstraintViolation;
 use PHPUnit\Framework\Attributes as PHPUnit;
 
 abstract class ValidAtTestCase extends ConstraintTestCase

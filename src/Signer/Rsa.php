@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Signer;
+namespace KaziRayhan\JWT\Signer;
 
 use const OPENSSL_KEYTYPE_RSA;
 

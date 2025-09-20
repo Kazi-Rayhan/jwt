@@ -10,7 +10,7 @@ We're adding a few deprecation annotations on the version `v4.3.0`.
 So, before going to `v5.0.0` please update to the latest 4.3.x version using composer:
 
 ```sh
-composer require lcobucci/jwt ^4.3
+composer require KaziRayhan/jwt ^4.3
 ```
 
 Then run your tests and change all calls to deprecated methods, even if they are not triggering any notices.
@@ -26,9 +26,9 @@ If you are using any variant of ECDSA, please change your code following this ex
  <?php
  declare(strict_types=1);
 
- use Lcobucci\JWT\Configuration;
- use Lcobucci\JWT\Signer;
- use Lcobucci\JWT\Signer\Key\InMemory;
+ use KaziRayhan\JWT\Configuration;
+ use KaziRayhan\JWT\Signer;
+ use KaziRayhan\JWT\Signer\Key\InMemory;
 
  require 'vendor/autoload.php';
 
@@ -46,10 +46,10 @@ If you are using any variant of ECDSA, please change your code following this ex
 
 To promote a more secure usage of the library and prevent misuse we decided to deviate from the RFC and drop `none`, which means that the following components are being removed:
 
-* `Lcobucci\JWT\Configuration::forUnsecuredSigner()`
-* `Lcobucci\JWT\Signer\Key\InMemory::empty()`
-* `Lcobucci\JWT\Signer\None`
-* `Lcobucci\JWT\Token\Signature::fromEmptyData()`
+* `KaziRayhan\JWT\Configuration::forUnsecuredSigner()`
+* `KaziRayhan\JWT\Signer\Key\InMemory::empty()`
+* `KaziRayhan\JWT\Signer\None`
+* `KaziRayhan\JWT\Token\Signature::fromEmptyData()`
 
 If you're relying on it and still want to have that on your system, please create your own implementation.
 
@@ -59,9 +59,9 @@ If you're using it because it's "fast", please look into adoption the non-standa
  <?php
  declare(strict_types=1);
 
- use Lcobucci\JWT\Configuration;
- use Lcobucci\JWT\Signer;
- use Lcobucci\JWT\Signer\Key\InMemory;
+ use KaziRayhan\JWT\Configuration;
+ use KaziRayhan\JWT\Signer;
+ use KaziRayhan\JWT\Signer\Key\InMemory;
 
  require 'vendor/autoload.php';
 
@@ -74,7 +74,7 @@ If you're using it because it's "fast", please look into adoption the non-standa
 
 ### `Builder` API is now `@immutable`
 
-`\Lcobucci\JWT\Builder` interface alongside with its default implementation `\Lcobucci\JWT\Token\Builder` are now marked `@immutable`.
+`\KaziRayhan\JWT\Builder` interface alongside with its default implementation `\KaziRayhan\JWT\Token\Builder` are now marked `@immutable`.
 
 If you are using it for example with the `JwtFacade` ensure now to use the returned new `Builder` instance:
 
@@ -121,14 +121,14 @@ Or:
  );
 ```
 
-### `lcobucci/clock` is not installed by default anymore
+### `KaziRayhan/clock` is not installed by default anymore
 
 Thanks to [PSR-20](https://www.php-fig.org/psr/psr-20/), users can more easily plug-in other [clock implementations](https://packagist.org/providers/psr/clock-implementation) if they choose to do so.
 
-If you like and were already using `lcobucci/clock` on your system, you're required to explicitly add it as a production dependency:
+If you like and were already using `KaziRayhan/clock` on your system, you're required to explicitly add it as a production dependency:
 
 ```sh
-composer require lcobucci/clock
+composer require KaziRayhan/clock
 ```
 
 ## v3.x to v4.x
@@ -144,7 +144,7 @@ However, you can also find here the instructions on how to make your code compat
 Update your existing software to the latest 3.4.x version using composer:
 
 ```sh
-composer require lcobucci/jwt ^3.4
+composer require KaziRayhan/jwt ^3.4
 ```
 
 Then run your tests and fix all deprecation notices.
@@ -158,7 +158,7 @@ Make sure you do not see any of them before you continue.
 Now you can upgrade to the latest 4.x version:
 
 ```sh
-composer require lcobucci/jwt ^4.0
+composer require KaziRayhan/jwt ^4.0
 ```
 
 Remember that some deprecation messages from the 3.4 version may have notified you that things still are different in 4.0, so you may find you need to adapt your own code once more at this stage.
@@ -181,11 +181,11 @@ Check an example of how to migrate the injection of builder+signer+key to config
  
  namespace Me\MyApp\Authentication;
  
--use Lcobucci\JWT\Builder;
- use Lcobucci\JWT\Configuration;
--use Lcobucci\JWT\Signer;
--use Lcobucci\JWT\Signer\Key;
- use Lcobucci\JWT\Token;
+-use KaziRayhan\JWT\Builder;
+ use KaziRayhan\JWT\Configuration;
+-use KaziRayhan\JWT\Signer;
+-use KaziRayhan\JWT\Signer\Key;
+ use KaziRayhan\JWT\Token;
  
  use function bin2hex;
  use function random_bytes;
@@ -224,9 +224,9 @@ You can find more information on how to use the configuration object, [here](con
 
 ### Use new `Key` objects
 
-`Lcobucci\JWT\Signer\Key` has been converted to an interface in `v4.0`.
+`KaziRayhan\JWT\Signer\Key` has been converted to an interface in `v4.0`.
 
-We provide `Lcobucci\JWT\Signer\Key\InMemory`, a drop-in replacement of the behaviour for `Lcobucci\JWT\Signer\Key` in `v3.x`.
+We provide `KaziRayhan\JWT\Signer\Key\InMemory`, a drop-in replacement of the behaviour for `KaziRayhan\JWT\Signer\Key` in `v3.x`.
 You will need to pick the appropriated named constructor to migrate your code:
 
 ```diff
@@ -235,8 +235,8 @@ You will need to pick the appropriated named constructor to migrate your code:
  
  namespace Me\MyApp\Authentication;
  
--use Lcobucci\JWT\Signer\Key;
-+use Lcobucci\JWT\Signer\Key\InMemory;
+-use KaziRayhan\JWT\Signer\Key;
++use KaziRayhan\JWT\Signer\Key\InMemory;
 -
 -use function base64_decode;
  
@@ -271,10 +271,10 @@ Here's the migration:
  namespace Me\MyApp\Authentication;
 
 +use DateTimeImmutable; 
--use Lcobucci\JWT\Builder;
-+use Lcobucci\JWT\Configuration;
-+use Lcobucci\JWT\Signer\Key\InMemory;
- use Lcobucci\JWT\Signer\Hmac\Sha256;
+-use KaziRayhan\JWT\Builder;
++use KaziRayhan\JWT\Configuration;
++use KaziRayhan\JWT\Signer\Key\InMemory;
+ use KaziRayhan\JWT\Signer\Hmac\Sha256;
 -
 -use function time;
 
@@ -321,7 +321,7 @@ If you want to continue using Unix timestamps, you can use the `withUnixTimestam
 
 Even though we didn't officially support multiple audiences, it was technically possible to achieve that by manually setting the `aud` claim to an array with multiple strings.
 
-If you parse a token with 3.4, and read its contents with `\Lcobucci\JWT\Token#getClaim()` or`\Lcobucci\JWT\Token#getClaims()`, you will only get the first element of such an array back.
+If you parse a token with 3.4, and read its contents with `\KaziRayhan\JWT\Token#getClaim()` or`\KaziRayhan\JWT\Token#getClaims()`, you will only get the first element of such an array back.
 If the audience claim does only contain a string, or only contains one string in the array, nothing changes.
 Please [upgrade to the new Token API](#use-the-new-token-api) for accessing claims in order to get the full audience array again (e.g. call `Token#claims()->get('aud')`).
 
@@ -335,10 +335,10 @@ When creating a token, use the new method `Builder#permittedFor()` as detailed b
  
  namespace Me\MyApp\Authentication;
 
--use Lcobucci\JWT\Builder;
-+use Lcobucci\JWT\Configuration;
-+use Lcobucci\JWT\Signer\Key\InMemory;
- use Lcobucci\JWT\Signer\Hmac\Sha256;
+-use KaziRayhan\JWT\Builder;
++use KaziRayhan\JWT\Configuration;
++use KaziRayhan\JWT\Signer\Key\InMemory;
+ use KaziRayhan\JWT\Signer\Hmac\Sha256;
 
 +$config = Configuration::forSymmetricSigner(new Sha256(), InMemory::plainText('testing'));
 
@@ -361,10 +361,10 @@ When creating a token, use the new method `Builder#permittedFor()` as detailed b
  
  namespace Me\MyApp\Authentication;
 
--use Lcobucci\JWT\Builder;
-+use Lcobucci\JWT\Configuration;
-+use Lcobucci\JWT\Signer\Key\InMemory;
- use Lcobucci\JWT\Signer\Hmac\Sha256;
+-use KaziRayhan\JWT\Builder;
++use KaziRayhan\JWT\Configuration;
++use KaziRayhan\JWT\Signer\Key\InMemory;
+ use KaziRayhan\JWT\Signer\Hmac\Sha256;
 
 +$config = Configuration::forSymmetricSigner(new Sha256(), InMemory::plainText('testing'));
 
@@ -385,10 +385,10 @@ When creating a token, use the new method `Builder#permittedFor()` as detailed b
  
  namespace Me\MyApp\Authentication;
 
--use Lcobucci\JWT\Builder;
-+use Lcobucci\JWT\Configuration;
-+use Lcobucci\JWT\Signer\Key\InMemory;
- use Lcobucci\JWT\Signer\Hmac\Sha256;
+-use KaziRayhan\JWT\Builder;
++use KaziRayhan\JWT\Configuration;
++use KaziRayhan\JWT\Signer\Key\InMemory;
+ use KaziRayhan\JWT\Signer\Hmac\Sha256;
 
 +$config = Configuration::forSymmetricSigner(new Sha256(), InMemory::plainText('testing'));
 
@@ -415,11 +415,11 @@ Here's an example of how to modify that logic (considering [constraints have bee
  namespace Me\MyApp\Authentication;
  
  use InvalidArgumentException;
-+use Lcobucci\JWT\Configuration;
--use Lcobucci\JWT\Signer;
--use Lcobucci\JWT\Signer\Key;
--use Lcobucci\JWT\Parser;
--use Lcobucci\JWT\ValidationData;
++use KaziRayhan\JWT\Configuration;
+-use KaziRayhan\JWT\Signer;
+-use KaziRayhan\JWT\Signer\Key;
+-use KaziRayhan\JWT\Parser;
+-use KaziRayhan\JWT\ValidationData;
  
  final class AuthenticateJwt
  {
@@ -456,8 +456,8 @@ Check [here](validating-tokens.md) for more information on how to validate token
 
 There some important differences on this new API:
 
-1. We no longer use the `Lcobucci\JWT\Claim` objects
-1. Headers and claims are now represented as `Lcobucci\JWT\Token\DataSet`
+1. We no longer use the `KaziRayhan\JWT\Claim` objects
+1. Headers and claims are now represented as `KaziRayhan\JWT\Token\DataSet`
 1. Different methods should be used to retrieve a header/claim
 1. No exception is thrown when accessing missing header/claim, the default argument is always used
 1. Tokens should be explicitly casted to string via method

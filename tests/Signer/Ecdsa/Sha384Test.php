@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Tests\Signer\Ecdsa;
+namespace KaziRayhan\JWT\Tests\Signer\Ecdsa;
 
-use Lcobucci\JWT\Signer\Ecdsa;
-use Lcobucci\JWT\Signer\Ecdsa\Sha384;
-use Lcobucci\JWT\Signer\InvalidKeyProvided;
-use Lcobucci\JWT\Signer\Key;
-use Lcobucci\JWT\Signer\OpenSSL;
+use KaziRayhan\JWT\Signer\Ecdsa;
+use KaziRayhan\JWT\Signer\Ecdsa\Sha384;
+use KaziRayhan\JWT\Signer\InvalidKeyProvided;
+use KaziRayhan\JWT\Signer\Key;
+use KaziRayhan\JWT\Signer\OpenSSL;
 use PHPUnit\Framework\Attributes as PHPUnit;
 
 use const OPENSSL_ALGO_SHA384;

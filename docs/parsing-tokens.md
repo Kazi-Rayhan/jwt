@@ -6,12 +6,12 @@ To parse a token you must create a new parser and ask it to parse a string:
 <?php
 declare(strict_types=1);
 
-use Lcobucci\JWT\Encoding\CannotDecodeContent;
-use Lcobucci\JWT\Encoding\JoseEncoder;
-use Lcobucci\JWT\Token\InvalidTokenStructure;
-use Lcobucci\JWT\Token\Parser;
-use Lcobucci\JWT\Token\UnsupportedHeaderFound;
-use Lcobucci\JWT\UnencryptedToken;
+use KaziRayhan\JWT\Encoding\CannotDecodeContent;
+use KaziRayhan\JWT\Encoding\JoseEncoder;
+use KaziRayhan\JWT\Token\InvalidTokenStructure;
+use KaziRayhan\JWT\Token\Parser;
+use KaziRayhan\JWT\Token\UnsupportedHeaderFound;
+use KaziRayhan\JWT\UnencryptedToken;
 
 require 'vendor/autoload.php';
 

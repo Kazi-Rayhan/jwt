@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Tests\Signer\Rsa;
+namespace KaziRayhan\JWT\Tests\Signer\Rsa;
 
-use Lcobucci\JWT\Signer\Key;
-use Lcobucci\JWT\Signer\OpenSSL;
+use KaziRayhan\JWT\Signer\Key;
+use KaziRayhan\JWT\Signer\OpenSSL;
 
 use const OPENSSL_ALGO_SHA256;
 

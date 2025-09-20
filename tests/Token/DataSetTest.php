@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Tests\Token;
+namespace KaziRayhan\JWT\Tests\Token;
 
-use Lcobucci\JWT\Token\DataSet;
+use KaziRayhan\JWT\Token\DataSet;
 use PHPUnit\Framework\Attributes as PHPUnit;
 use PHPUnit\Framework\TestCase;
 

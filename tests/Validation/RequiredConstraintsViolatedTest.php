@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Tests\Validation;
+namespace KaziRayhan\JWT\Tests\Validation;
 
-use Lcobucci\JWT\Validation\ConstraintViolation;
-use Lcobucci\JWT\Validation\RequiredConstraintsViolated;
+use KaziRayhan\JWT\Validation\ConstraintViolation;
+use KaziRayhan\JWT\Validation\RequiredConstraintsViolated;
 use PHPUnit\Framework\Attributes as PHPUnit;
 use PHPUnit\Framework\TestCase;
 

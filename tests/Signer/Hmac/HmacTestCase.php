@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Tests\Signer\Hmac;
+namespace KaziRayhan\JWT\Tests\Signer\Hmac;
 
-use Lcobucci\JWT\Signer\Hmac;
-use Lcobucci\JWT\Signer\InvalidKeyProvided;
-use Lcobucci\JWT\Signer\Key\InMemory;
+use KaziRayhan\JWT\Signer\Hmac;
+use KaziRayhan\JWT\Signer\InvalidKeyProvided;
+use KaziRayhan\JWT\Signer\Key\InMemory;
 use PHPUnit\Framework\Attributes as PHPUnit;
 use PHPUnit\Framework\TestCase;
 

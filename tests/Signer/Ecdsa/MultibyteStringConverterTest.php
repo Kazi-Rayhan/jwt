@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Tests\Signer\Ecdsa;
+namespace KaziRayhan\JWT\Tests\Signer\Ecdsa;
 
-use Lcobucci\JWT\Signer\Ecdsa\ConversionFailed;
-use Lcobucci\JWT\Signer\Ecdsa\MultibyteStringConverter;
+use KaziRayhan\JWT\Signer\Ecdsa\ConversionFailed;
+use KaziRayhan\JWT\Signer\Ecdsa\MultibyteStringConverter;
 use PHPUnit\Framework\Attributes as PHPUnit;
 use PHPUnit\Framework\TestCase;
 
@@ -12,7 +12,7 @@ use function bin2hex;
 use function hex2bin;
 use function strlen;
 
-/** @coversDefaultClass \Lcobucci\JWT\Signer\Ecdsa\MultibyteStringConverter */
+/** @coversDefaultClass \KaziRayhan\JWT\Signer\Ecdsa\MultibyteStringConverter */
 #[PHPUnit\CoversClass(MultibyteStringConverter::class)]
 #[PHPUnit\CoversClass(ConversionFailed::class)]
 final class MultibyteStringConverterTest extends TestCase

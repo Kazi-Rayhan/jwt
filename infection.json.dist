@@ -11,25 +11,25 @@
         "@function_signature": true,
         "CastInt": {
             "ignore": [
-                "Lcobucci\\JWT\\Signer\\Ecdsa\\MultibyteStringConverter::octetLength",
-                "Lcobucci\\JWT\\Signer\\Ecdsa\\MultibyteStringConverter::readAsn1Integer"
+                "KaziRayhan\\JWT\\Signer\\Ecdsa\\MultibyteStringConverter::octetLength",
+                "KaziRayhan\\JWT\\Signer\\Ecdsa\\MultibyteStringConverter::readAsn1Integer"
             ]
         },
         "UnwrapSubstr": {
             "ignore": [
-                "Lcobucci\\JWT\\Signer\\Ecdsa\\MultibyteStringConverter::preparePositiveInteger"
+                "KaziRayhan\\JWT\\Signer\\Ecdsa\\MultibyteStringConverter::preparePositiveInteger"
             ]
         },
         "GreaterThan": {
             "ignore": [
-                "Lcobucci\\JWT\\Signer\\Ecdsa\\MultibyteStringConverter::toAsn1",
-                "Lcobucci\\JWT\\Signer\\Ecdsa\\MultibyteStringConverter::preparePositiveInteger",
-                "Lcobucci\\JWT\\Signer\\Ecdsa\\MultibyteStringConverter::retrievePositiveInteger"
+                "KaziRayhan\\JWT\\Signer\\Ecdsa\\MultibyteStringConverter::toAsn1",
+                "KaziRayhan\\JWT\\Signer\\Ecdsa\\MultibyteStringConverter::preparePositiveInteger",
+                "KaziRayhan\\JWT\\Signer\\Ecdsa\\MultibyteStringConverter::retrievePositiveInteger"
             ]
         },
         "LessThanOrEqualTo": {
             "ignore": [
-                "Lcobucci\\JWT\\Signer\\Ecdsa\\MultibyteStringConverter::preparePositiveInteger"
+                "KaziRayhan\\JWT\\Signer\\Ecdsa\\MultibyteStringConverter::preparePositiveInteger"
             ]
         },
         "LogicalNot": {

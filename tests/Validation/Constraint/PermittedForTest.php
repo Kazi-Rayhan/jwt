@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Tests\Validation\Constraint;
+namespace KaziRayhan\JWT\Tests\Validation\Constraint;
 
-use Lcobucci\JWT\Token;
-use Lcobucci\JWT\Token\RegisteredClaims;
-use Lcobucci\JWT\Validation\Constraint\PermittedFor;
-use Lcobucci\JWT\Validation\ConstraintViolation;
+use KaziRayhan\JWT\Token;
+use KaziRayhan\JWT\Token\RegisteredClaims;
+use KaziRayhan\JWT\Validation\Constraint\PermittedFor;
+use KaziRayhan\JWT\Validation\ConstraintViolation;
 use PHPUnit\Framework\Attributes as PHPUnit;
 
 #[PHPUnit\CoversClass(ConstraintViolation::class)]

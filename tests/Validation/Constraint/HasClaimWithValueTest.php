@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Tests\Validation\Constraint;
+namespace KaziRayhan\JWT\Tests\Validation\Constraint;
 
-use Lcobucci\JWT\Token;
-use Lcobucci\JWT\Validation\Constraint\CannotValidateARegisteredClaim;
-use Lcobucci\JWT\Validation\Constraint\HasClaimWithValue;
-use Lcobucci\JWT\Validation\ConstraintViolation;
+use KaziRayhan\JWT\Token;
+use KaziRayhan\JWT\Validation\Constraint\CannotValidateARegisteredClaim;
+use KaziRayhan\JWT\Validation\Constraint\HasClaimWithValue;
+use KaziRayhan\JWT\Validation\ConstraintViolation;
 use PHPUnit\Framework\Attributes as PHPUnit;
 
 #[PHPUnit\CoversClass(ConstraintViolation::class)]

@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT;
+namespace KaziRayhan\JWT;
 
-use Lcobucci\JWT\Validation\Constraint;
-use Lcobucci\JWT\Validation\NoConstraintsGiven;
-use Lcobucci\JWT\Validation\RequiredConstraintsViolated;
+use KaziRayhan\JWT\Validation\Constraint;
+use KaziRayhan\JWT\Validation\NoConstraintsGiven;
+use KaziRayhan\JWT\Validation\RequiredConstraintsViolated;
 
 interface Validator
 {

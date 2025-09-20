@@ -1,22 +1,22 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Tests;
+namespace KaziRayhan\JWT\Tests;
 
 use AssertionError;
 use DateTimeImmutable;
-use Lcobucci\Clock\FrozenClock;
-use Lcobucci\JWT\Builder;
-use Lcobucci\JWT\Encoding;
-use Lcobucci\JWT\JwtFacade;
-use Lcobucci\JWT\Signer\Hmac;
-use Lcobucci\JWT\Signer\Key\InMemory;
-use Lcobucci\JWT\SodiumBase64Polyfill;
-use Lcobucci\JWT\Token;
-use Lcobucci\JWT\Validation\Constraint;
-use Lcobucci\JWT\Validation\ConstraintViolation;
-use Lcobucci\JWT\Validation\RequiredConstraintsViolated;
-use Lcobucci\JWT\Validation\Validator;
+use KaziRayhan\Clock\FrozenClock;
+use KaziRayhan\JWT\Builder;
+use KaziRayhan\JWT\Encoding;
+use KaziRayhan\JWT\JwtFacade;
+use KaziRayhan\JWT\Signer\Hmac;
+use KaziRayhan\JWT\Signer\Key\InMemory;
+use KaziRayhan\JWT\SodiumBase64Polyfill;
+use KaziRayhan\JWT\Token;
+use KaziRayhan\JWT\Validation\Constraint;
+use KaziRayhan\JWT\Validation\ConstraintViolation;
+use KaziRayhan\JWT\Validation\RequiredConstraintsViolated;
+use KaziRayhan\JWT\Validation\Validator;
 use PHPUnit\Framework\Attributes as PHPUnit;
 use PHPUnit\Framework\TestCase;
 use Psr\Clock\ClockInterface;

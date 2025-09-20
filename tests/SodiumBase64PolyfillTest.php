@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Tests;
+namespace KaziRayhan\JWT\Tests;
 
-use Lcobucci\JWT\Encoding\CannotDecodeContent;
-use Lcobucci\JWT\SodiumBase64Polyfill;
+use KaziRayhan\JWT\Encoding\CannotDecodeContent;
+use KaziRayhan\JWT\SodiumBase64Polyfill;
 use PHPUnit\Framework\Attributes as PHPUnit;
 use PHPUnit\Framework\TestCase;
 

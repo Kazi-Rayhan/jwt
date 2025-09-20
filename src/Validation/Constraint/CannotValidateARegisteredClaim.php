@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Validation\Constraint;
+namespace KaziRayhan\JWT\Validation\Constraint;
 
 use InvalidArgumentException;
-use Lcobucci\JWT\Exception;
+use KaziRayhan\JWT\Exception;
 
 final class CannotValidateARegisteredClaim extends InvalidArgumentException implements Exception
 {

@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Encoding;
+namespace KaziRayhan\JWT\Encoding;
 
 use JsonException;
-use Lcobucci\JWT\Exception;
+use KaziRayhan\JWT\Exception;
 use RuntimeException;
 
 final class CannotDecodeContent extends RuntimeException implements Exception

@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Validation;
+namespace KaziRayhan\JWT\Validation;
 
-use Lcobucci\JWT\Exception;
+use KaziRayhan\JWT\Exception;
 use RuntimeException;
 
 use function array_map;

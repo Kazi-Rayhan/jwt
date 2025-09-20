@@ -1,15 +1,15 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Tests;
+namespace KaziRayhan\JWT\Tests;
 
-use Lcobucci\JWT\Signer\Ecdsa;
-use Lcobucci\JWT\Signer\Ecdsa\Sha256;
-use Lcobucci\JWT\Signer\Ecdsa\Sha384;
-use Lcobucci\JWT\Signer\Ecdsa\Sha512;
-use Lcobucci\JWT\Signer\Key;
-use Lcobucci\JWT\Signer\Key\InMemory;
-use Lcobucci\JWT\Signer\OpenSSL;
+use KaziRayhan\JWT\Signer\Ecdsa;
+use KaziRayhan\JWT\Signer\Ecdsa\Sha256;
+use KaziRayhan\JWT\Signer\Ecdsa\Sha384;
+use KaziRayhan\JWT\Signer\Ecdsa\Sha512;
+use KaziRayhan\JWT\Signer\Key;
+use KaziRayhan\JWT\Signer\Key\InMemory;
+use KaziRayhan\JWT\Signer\OpenSSL;
 use PHPUnit\Framework\Attributes as PHPUnit;
 use PHPUnit\Framework\TestCase;
 

@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Validation\Constraint;
+namespace KaziRayhan\JWT\Validation\Constraint;
 
-use Lcobucci\JWT\Signer;
-use Lcobucci\JWT\Token;
-use Lcobucci\JWT\UnencryptedToken;
-use Lcobucci\JWT\Validation\ConstraintViolation;
-use Lcobucci\JWT\Validation\SignedWith as SignedWithInterface;
+use KaziRayhan\JWT\Signer;
+use KaziRayhan\JWT\Token;
+use KaziRayhan\JWT\UnencryptedToken;
+use KaziRayhan\JWT\Validation\ConstraintViolation;
+use KaziRayhan\JWT\Validation\SignedWith as SignedWithInterface;
 
 final readonly class SignedWith implements SignedWithInterface
 {

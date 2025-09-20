@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Tests\Validation\Constraint;
+namespace KaziRayhan\JWT\Tests\Validation\Constraint;
 
-use Lcobucci\JWT\Signer;
-use Lcobucci\JWT\Token;
-use Lcobucci\JWT\Token\Signature;
-use Lcobucci\JWT\Validation\Constraint\SignedWith;
-use Lcobucci\JWT\Validation\ConstraintViolation;
+use KaziRayhan\JWT\Signer;
+use KaziRayhan\JWT\Token;
+use KaziRayhan\JWT\Token\Signature;
+use KaziRayhan\JWT\Validation\Constraint\SignedWith;
+use KaziRayhan\JWT\Validation\ConstraintViolation;
 use PHPUnit\Framework\Attributes as PHPUnit;
 use PHPUnit\Framework\MockObject\MockObject;
 

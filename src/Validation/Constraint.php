@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Validation;
+namespace KaziRayhan\JWT\Validation;
 
-use Lcobucci\JWT\Token;
+use KaziRayhan\JWT\Token;
 
 interface Constraint
 {

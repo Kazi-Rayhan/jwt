@@ -35,11 +35,11 @@ namespace MyApp;
 require 'vendor/autoload.php';
 
 use DateTimeImmutable;
-use Lcobucci\Clock\FrozenClock;
-use Lcobucci\JWT\Builder;
-use Lcobucci\JWT\JwtFacade;
-use Lcobucci\JWT\Signer;
-use Lcobucci\JWT\Signer\Key\InMemory;
+use KaziRayhan\Clock\FrozenClock;
+use KaziRayhan\JWT\Builder;
+use KaziRayhan\JWT\JwtFacade;
+use KaziRayhan\JWT\Signer;
+use KaziRayhan\JWT\Signer\Key\InMemory;
 
 // `FrozenClock` is used here to fix to a point in time that allows our validation to pass
 $clock = new FrozenClock(new DateTimeImmutable('2023-11-04 21:06:01+00:00')); 
@@ -78,11 +78,11 @@ namespace MyApp;
 require 'vendor/autoload.php';
 
 use DateTimeImmutable;
-use Lcobucci\Clock\FrozenClock;
-use Lcobucci\JWT\JwtFacade;
-use Lcobucci\JWT\Signer;
-use Lcobucci\JWT\Signer\Key\InMemory;
-use Lcobucci\JWT\Validation\Constraint;
+use KaziRayhan\Clock\FrozenClock;
+use KaziRayhan\JWT\JwtFacade;
+use KaziRayhan\JWT\Signer;
+use KaziRayhan\JWT\Signer\Key\InMemory;
+use KaziRayhan\JWT\Validation\Constraint;
 
 // `FrozenClock` is used here to fix to a point in time that allows our
 // validation to pass
@@ -118,11 +118,11 @@ These are the changes to your issuing logic:
  require 'vendor/autoload.php';
  
  use DateTimeImmutable;
- use Lcobucci\Clock\FrozenClock;
- use Lcobucci\JWT\Builder;
- use Lcobucci\JWT\JwtFacade;
- use Lcobucci\JWT\Signer;
- use Lcobucci\JWT\Signer\Key\InMemory;
+ use KaziRayhan\Clock\FrozenClock;
+ use KaziRayhan\JWT\Builder;
+ use KaziRayhan\JWT\JwtFacade;
+ use KaziRayhan\JWT\Signer;
+ use KaziRayhan\JWT\Signer\Key\InMemory;
  
  // `FrozenClock` is used here to fix to a point in time that allows our validation to pass
  $clock = new FrozenClock(new DateTimeImmutable('2023-11-04 21:06:01+00:00')); 
@@ -166,11 +166,11 @@ Now check the changes on the parsing and validation logic:
  require 'vendor/autoload.php';
  
  use DateTimeImmutable;
- use Lcobucci\Clock\FrozenClock;
- use Lcobucci\JWT\JwtFacade;
- use Lcobucci\JWT\Signer;
- use Lcobucci\JWT\Signer\Key\InMemory;
- use Lcobucci\JWT\Validation\Constraint;
+ use KaziRayhan\Clock\FrozenClock;
+ use KaziRayhan\JWT\JwtFacade;
+ use KaziRayhan\JWT\Signer;
+ use KaziRayhan\JWT\Signer\Key\InMemory;
+ use KaziRayhan\JWT\Validation\Constraint;
 
  // `FrozenClock` is used here to fix to a point in time that allows our
  // validation to pass

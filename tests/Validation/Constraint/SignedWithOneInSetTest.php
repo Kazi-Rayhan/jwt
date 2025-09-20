@@ -1,27 +1,27 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Tests\Validation\Constraint;
+namespace KaziRayhan\JWT\Tests\Validation\Constraint;
 
 use DateTimeImmutable;
-use Lcobucci\Clock\FrozenClock;
-use Lcobucci\JWT\Encoding\ChainedFormatter;
-use Lcobucci\JWT\Encoding\JoseEncoder;
-use Lcobucci\JWT\Encoding\UnifyAudience;
-use Lcobucci\JWT\Encoding\UnixTimestampDates;
-use Lcobucci\JWT\JwtFacade;
-use Lcobucci\JWT\Signer\Key\InMemory;
-use Lcobucci\JWT\SodiumBase64Polyfill;
-use Lcobucci\JWT\Tests\Signer\FakeSigner;
-use Lcobucci\JWT\Token\Builder;
-use Lcobucci\JWT\Token\DataSet;
-use Lcobucci\JWT\Token\Parser;
-use Lcobucci\JWT\Token\Plain;
-use Lcobucci\JWT\Token\Signature;
-use Lcobucci\JWT\Validation\Constraint\SignedWith;
-use Lcobucci\JWT\Validation\Constraint\SignedWithOneInSet;
-use Lcobucci\JWT\Validation\Constraint\SignedWithUntilDate;
-use Lcobucci\JWT\Validation\ConstraintViolation;
+use KaziRayhan\Clock\FrozenClock;
+use KaziRayhan\JWT\Encoding\ChainedFormatter;
+use KaziRayhan\JWT\Encoding\JoseEncoder;
+use KaziRayhan\JWT\Encoding\UnifyAudience;
+use KaziRayhan\JWT\Encoding\UnixTimestampDates;
+use KaziRayhan\JWT\JwtFacade;
+use KaziRayhan\JWT\Signer\Key\InMemory;
+use KaziRayhan\JWT\SodiumBase64Polyfill;
+use KaziRayhan\JWT\Tests\Signer\FakeSigner;
+use KaziRayhan\JWT\Token\Builder;
+use KaziRayhan\JWT\Token\DataSet;
+use KaziRayhan\JWT\Token\Parser;
+use KaziRayhan\JWT\Token\Plain;
+use KaziRayhan\JWT\Token\Signature;
+use KaziRayhan\JWT\Validation\Constraint\SignedWith;
+use KaziRayhan\JWT\Validation\Constraint\SignedWithOneInSet;
+use KaziRayhan\JWT\Validation\Constraint\SignedWithUntilDate;
+use KaziRayhan\JWT\Validation\ConstraintViolation;
 use PHPUnit\Framework\Attributes as PHPUnit;
 
 use const PHP_EOL;

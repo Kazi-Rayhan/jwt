@@ -13,10 +13,10 @@ They're usually recommended for scenarios where these operations are handled by 
 
 | Name      | Description        | Class                              | Key length req. |
 |-----------|--------------------|------------------------------------|-----------------|
-| `HS256`   | HMAC using SHA-256 | `\Lcobucci\JWT\Signer\Hmac\Sha256` | `>= 256 bits`   |
-| `HS384`   | HMAC using SHA-384 | `\Lcobucci\JWT\Signer\Hmac\Sha384` | `>= 384 bits`   |
-| `HS512`   | HMAC using SHA-512 | `\Lcobucci\JWT\Signer\Hmac\Sha512` | `>= 512 bits`   |
-| `BLAKE2B` | Blake2b keyed Hash | `\Lcobucci\JWT\Signer\Blake2b`     | `>= 256 bits`   |
+| `HS256`   | HMAC using SHA-256 | `\KaziRayhan\JWT\Signer\Hmac\Sha256` | `>= 256 bits`   |
+| `HS384`   | HMAC using SHA-384 | `\KaziRayhan\JWT\Signer\Hmac\Sha384` | `>= 384 bits`   |
+| `HS512`   | HMAC using SHA-512 | `\KaziRayhan\JWT\Signer\Hmac\Sha512` | `>= 512 bits`   |
+| `BLAKE2B` | Blake2b keyed Hash | `\KaziRayhan\JWT\Signer\Blake2b`     | `>= 256 bits`   |
 
 !!! Warning
     Although `BLAKE2B` is fantastic due to its performance, it's not [JWT standard] and won't necessarily be offered by other libraries.
@@ -28,13 +28,13 @@ They're usually recommended for scenarios where creation is handled by a compone
 
 | Name    | Description                     | Class                               | Key length req. |
 |---------|---------------------------------|-------------------------------------|-----------------|
-| `ES256` | ECDSA using P-256 and SHA-256   | `\Lcobucci\JWT\Signer\Ecdsa\Sha256` | `== 256 bits`   |
-| `ES384` | ECDSA using P-384 and SHA-384   | `\Lcobucci\JWT\Signer\Ecdsa\Sha384` | `== 384 bits`   |
-| `ES512` | ECDSA using P-521 and SHA-512   | `\Lcobucci\JWT\Signer\Ecdsa\Sha512` | `== 521 bits`   |
-| `RS256` | RSASSA-PKCS1-v1_5 using SHA-256 | `\Lcobucci\JWT\Signer\Rsa\Sha256`   | `>= 2048 bits`  |
-| `RS384` | RSASSA-PKCS1-v1_5 using SHA-384 | `\Lcobucci\JWT\Signer\Rsa\Sha384`   | `>= 2048 bits`  |
-| `RS512` | RSASSA-PKCS1-v1_5 using SHA-512 | `\Lcobucci\JWT\Signer\Rsa\Sha512`   | `>= 2048 bits`  |
-| `EdDSA` | EdDSA signature algorithms      | `\Lcobucci\JWT\Signer\Eddsa`        | `>= 256 bits`   |
+| `ES256` | ECDSA using P-256 and SHA-256   | `\KaziRayhan\JWT\Signer\Ecdsa\Sha256` | `== 256 bits`   |
+| `ES384` | ECDSA using P-384 and SHA-384   | `\KaziRayhan\JWT\Signer\Ecdsa\Sha384` | `== 384 bits`   |
+| `ES512` | ECDSA using P-521 and SHA-512   | `\KaziRayhan\JWT\Signer\Ecdsa\Sha512` | `== 521 bits`   |
+| `RS256` | RSASSA-PKCS1-v1_5 using SHA-256 | `\KaziRayhan\JWT\Signer\Rsa\Sha256`   | `>= 2048 bits`  |
+| `RS384` | RSASSA-PKCS1-v1_5 using SHA-384 | `\KaziRayhan\JWT\Signer\Rsa\Sha384`   | `>= 2048 bits`  |
+| `RS512` | RSASSA-PKCS1-v1_5 using SHA-512 | `\KaziRayhan\JWT\Signer\Rsa\Sha512`   | `>= 2048 bits`  |
+| `EdDSA` | EdDSA signature algorithms      | `\KaziRayhan\JWT\Signer\Eddsa`        | `>= 256 bits`   |
 
 ## `none` algorithm
 

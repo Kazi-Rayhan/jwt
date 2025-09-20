@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Tests;
+namespace KaziRayhan\JWT\Tests;
 
 use DateTimeInterface;
-use Lcobucci\JWT\Parser;
-use Lcobucci\JWT\Token;
-use Lcobucci\JWT\Token\DataSet;
+use KaziRayhan\JWT\Parser;
+use KaziRayhan\JWT\Token;
+use KaziRayhan\JWT\Token\DataSet;
 
 final readonly class UnsupportedParser implements Parser
 {

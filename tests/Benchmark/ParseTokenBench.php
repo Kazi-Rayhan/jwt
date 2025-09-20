@@ -1,14 +1,14 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Tests\Benchmark;
+namespace KaziRayhan\JWT\Tests\Benchmark;
 
-use Lcobucci\Clock\SystemClock;
-use Lcobucci\JWT\Builder;
-use Lcobucci\JWT\JwtFacade;
-use Lcobucci\JWT\Signer;
-use Lcobucci\JWT\Signer\Key;
-use Lcobucci\JWT\Validation\Constraint;
+use KaziRayhan\Clock\SystemClock;
+use KaziRayhan\JWT\Builder;
+use KaziRayhan\JWT\JwtFacade;
+use KaziRayhan\JWT\Signer;
+use KaziRayhan\JWT\Signer\Key;
+use KaziRayhan\JWT\Validation\Constraint;
 use PhpBench\Attributes as Bench;
 
 #[Bench\BeforeMethods('initialize')]
@@ -30,9 +30,9 @@ final class ParseTokenBench extends AlgorithmsBench
             $this->resolveSigningKey($params['algorithm']),
             static fn (Builder $builder): Builder => $builder
                 ->identifiedBy('token-1')
-                ->issuedBy('lcobucci.jwt.benchmarks')
+                ->issuedBy('KaziRayhan.jwt.benchmarks')
                 ->relatedTo('user-1')
-                ->permittedFor('lcobucci.jwt'),
+                ->permittedFor('KaziRayhan.jwt'),
         )->toString();
     }
 
@@ -42,9 +42,9 @@ final class ParseTokenBench extends AlgorithmsBench
             $this->jwt,
             new Constraint\SignedWith($this->algorithm, $this->key),
             new Constraint\StrictValidAt(SystemClock::fromSystemTimezone()),
-            new Constraint\IssuedBy('lcobucci.jwt.benchmarks'),
+            new Constraint\IssuedBy('KaziRayhan.jwt.benchmarks'),
             new Constraint\RelatedTo('user-1'),
-            new Constraint\PermittedFor('lcobucci.jwt'),
+            new Constraint\PermittedFor('KaziRayhan.jwt'),
             new Constraint\IdentifiedBy('token-1'),
         );
     }

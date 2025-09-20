@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Tests\Benchmark;
+namespace KaziRayhan\JWT\Tests\Benchmark;
 
-use Lcobucci\JWT\Signer;
-use Lcobucci\JWT\Signer\Key;
-use Lcobucci\JWT\Signer\Key\InMemory;
+use KaziRayhan\JWT\Signer;
+use KaziRayhan\JWT\Signer\Key;
+use KaziRayhan\JWT\Signer\Key\InMemory;
 use PhpBench\Attributes as Bench;
 use RuntimeException;
 

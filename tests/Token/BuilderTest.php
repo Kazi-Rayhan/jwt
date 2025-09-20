@@ -1,19 +1,19 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Tests\Token;
+namespace KaziRayhan\JWT\Tests\Token;
 
 use DateTimeImmutable;
-use Lcobucci\JWT\Encoder;
-use Lcobucci\JWT\Encoding\MicrosecondBasedDateConversion;
-use Lcobucci\JWT\Signer;
-use Lcobucci\JWT\Signer\Key\InMemory;
-use Lcobucci\JWT\Token\Builder;
-use Lcobucci\JWT\Token\DataSet;
-use Lcobucci\JWT\Token\Plain;
-use Lcobucci\JWT\Token\RegisteredClaimGiven;
-use Lcobucci\JWT\Token\RegisteredClaims;
-use Lcobucci\JWT\Token\Signature;
+use KaziRayhan\JWT\Encoder;
+use KaziRayhan\JWT\Encoding\MicrosecondBasedDateConversion;
+use KaziRayhan\JWT\Signer;
+use KaziRayhan\JWT\Signer\Key\InMemory;
+use KaziRayhan\JWT\Token\Builder;
+use KaziRayhan\JWT\Token\DataSet;
+use KaziRayhan\JWT\Token\Plain;
+use KaziRayhan\JWT\Token\RegisteredClaimGiven;
+use KaziRayhan\JWT\Token\RegisteredClaims;
+use KaziRayhan\JWT\Token\Signature;
 use PHPUnit\Framework\Attributes as PHPUnit;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;

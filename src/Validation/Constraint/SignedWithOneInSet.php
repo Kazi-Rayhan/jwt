@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Validation\Constraint;
+namespace KaziRayhan\JWT\Validation\Constraint;
 
-use Lcobucci\JWT\Token;
-use Lcobucci\JWT\Validation\ConstraintViolation;
-use Lcobucci\JWT\Validation\SignedWith as SignedWithInterface;
+use KaziRayhan\JWT\Token;
+use KaziRayhan\JWT\Validation\ConstraintViolation;
+use KaziRayhan\JWT\Validation\SignedWith as SignedWithInterface;
 
 use const PHP_EOL;
 

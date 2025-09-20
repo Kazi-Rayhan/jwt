@@ -1,14 +1,14 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Tests\Signer;
+namespace KaziRayhan\JWT\Tests\Signer;
 
-use Lcobucci\JWT\Encoding\JoseEncoder;
-use Lcobucci\JWT\Signer\Eddsa;
-use Lcobucci\JWT\Signer\InvalidKeyProvided;
-use Lcobucci\JWT\Signer\Key\InMemory;
-use Lcobucci\JWT\SodiumBase64Polyfill;
-use Lcobucci\JWT\Tests\Keys;
+use KaziRayhan\JWT\Encoding\JoseEncoder;
+use KaziRayhan\JWT\Signer\Eddsa;
+use KaziRayhan\JWT\Signer\InvalidKeyProvided;
+use KaziRayhan\JWT\Signer\Key\InMemory;
+use KaziRayhan\JWT\SodiumBase64Polyfill;
+use KaziRayhan\JWT\Tests\Keys;
 use PHPUnit\Framework\Attributes as PHPUnit;
 use PHPUnit\Framework\TestCase;
 

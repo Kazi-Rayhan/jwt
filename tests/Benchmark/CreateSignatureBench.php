@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Tests\Benchmark;
+namespace KaziRayhan\JWT\Tests\Benchmark;
 
-use Lcobucci\JWT\Signer;
-use Lcobucci\JWT\Signer\Key;
+use KaziRayhan\JWT\Signer;
+use KaziRayhan\JWT\Signer\Key;
 use PhpBench\Attributes as Bench;
 
 #[Bench\BeforeMethods('initialize')]

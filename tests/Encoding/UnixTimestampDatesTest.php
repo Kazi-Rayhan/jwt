@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Tests\Encoding;
+namespace KaziRayhan\JWT\Tests\Encoding;
 
 use DateTimeImmutable;
-use Lcobucci\JWT\Encoding\UnixTimestampDates;
-use Lcobucci\JWT\Token\RegisteredClaims;
+use KaziRayhan\JWT\Encoding\UnixTimestampDates;
+use KaziRayhan\JWT\Token\RegisteredClaims;
 use PHPUnit\Framework\Attributes as PHPUnit;
 use PHPUnit\Framework\TestCase;
 

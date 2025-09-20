@@ -1,13 +1,13 @@
 # Quick start
 
 Once the library has been [installed](installation.md), you are able to issue and parse JWTs.
-The class `Lcobucci\JWT\JwtFacade` is the quickest way to perform these operations.
+The class `KaziRayhan\JWT\JwtFacade` is the quickest way to perform these operations.
 
 Using that facade we also aim to make sure that every token is properly signed and has the recommended claims for date control.
 
 ## Issuing tokens
 
-The method `Lcobucci\JWT\JwtFacade#issue()` is available for quickly creating tokens.
+The method `KaziRayhan\JWT\JwtFacade#issue()` is available for quickly creating tokens.
 It uses the current time to generate the date claims (default expiration is **5 minutes**).
 
 To issue a token, call the method passing: an algorithm, a key, and a customisation function:
@@ -21,10 +21,10 @@ namespace MyApp;
 require 'vendor/autoload.php';
 
 use DateTimeImmutable;
-use Lcobucci\JWT\Builder;
-use Lcobucci\JWT\JwtFacade;
-use Lcobucci\JWT\Signer\Hmac\Sha256;
-use Lcobucci\JWT\Signer\Key\InMemory;
+use KaziRayhan\JWT\Builder;
+use KaziRayhan\JWT\JwtFacade;
+use KaziRayhan\JWT\Signer\Hmac\Sha256;
+use KaziRayhan\JWT\Signer\Key\InMemory;
 
 use function var_dump;
 
@@ -64,13 +64,13 @@ namespace MyApp;
 require 'vendor/autoload.php';
 
 use DateTimeImmutable;
-use Lcobucci\Clock\FrozenClock; // If you prefer, other PSR-20 implementations may also be used
+use KaziRayhan\Clock\FrozenClock; // If you prefer, other PSR-20 implementations may also be used
                                 // (https://packagist.org/providers/psr/clock-implementation)
-use Lcobucci\JWT\Builder;
-use Lcobucci\JWT\JwtFacade;
-use Lcobucci\JWT\Signer\Hmac\Sha256;
-use Lcobucci\JWT\Signer\Key\InMemory;
-use Lcobucci\JWT\Token\RegisteredClaims;
+use KaziRayhan\JWT\Builder;
+use KaziRayhan\JWT\JwtFacade;
+use KaziRayhan\JWT\Signer\Hmac\Sha256;
+use KaziRayhan\JWT\Signer\Key\InMemory;
+use KaziRayhan\JWT\Token\RegisteredClaims;
 
 $clock = new FrozenClock(new DateTimeImmutable('2022-06-24 22:51:10'));
 $key   = InMemory::base64Encoded(
@@ -93,7 +93,7 @@ echo $token->claims()->get(
 
 ## Parsing tokens
 
-The method `Lcobucci\JWT\JwtFacade#parse()` is the one for quickly parsing tokens.
+The method `KaziRayhan\JWT\JwtFacade#parse()` is the one for quickly parsing tokens.
 It also verifies the signature and date claims, throwing an exception in case of tokens in unexpected state.
 
 ```php
@@ -105,12 +105,12 @@ namespace MyApp;
 require 'vendor/autoload.php';
 
 use DateTimeImmutable;
-use Lcobucci\Clock\FrozenClock; // If you prefer, other PSR-20 implementations may also be used
+use KaziRayhan\Clock\FrozenClock; // If you prefer, other PSR-20 implementations may also be used
                                 // (https://packagist.org/providers/psr/clock-implementation)
-use Lcobucci\JWT\JwtFacade;
-use Lcobucci\JWT\Signer\Hmac\Sha256;
-use Lcobucci\JWT\Signer\Key\InMemory;
-use Lcobucci\JWT\Validation\Constraint;
+use KaziRayhan\JWT\JwtFacade;
+use KaziRayhan\JWT\Signer\Hmac\Sha256;
+use KaziRayhan\JWT\Signer\Key\InMemory;
+use KaziRayhan\JWT\Validation\Constraint;
 
 use function var_dump;
 

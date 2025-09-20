@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Tests\Benchmark;
+namespace KaziRayhan\JWT\Tests\Benchmark;
 
-use Lcobucci\JWT\Builder;
-use Lcobucci\JWT\JwtFacade;
-use Lcobucci\JWT\Signer;
-use Lcobucci\JWT\Signer\Key;
+use KaziRayhan\JWT\Builder;
+use KaziRayhan\JWT\JwtFacade;
+use KaziRayhan\JWT\Signer;
+use KaziRayhan\JWT\Signer\Key;
 use PhpBench\Attributes as Bench;
 
 #[Bench\BeforeMethods('initialize')]
@@ -29,9 +29,9 @@ final class IssueTokenBench extends AlgorithmsBench
             $this->key,
             static fn (Builder $builder): Builder => $builder
                 ->identifiedBy('token-1')
-                ->issuedBy('lcobucci.jwt.benchmarks')
+                ->issuedBy('KaziRayhan.jwt.benchmarks')
                 ->relatedTo('user-1')
-                ->permittedFor('lcobucci.jwt'),
+                ->permittedFor('KaziRayhan.jwt'),
         );
     }
 }

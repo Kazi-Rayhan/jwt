@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Signer\Key;
+namespace KaziRayhan\JWT\Signer\Key;
 
-use Lcobucci\JWT\Signer\InvalidKeyProvided;
-use Lcobucci\JWT\Signer\Key;
-use Lcobucci\JWT\SodiumBase64Polyfill;
+use KaziRayhan\JWT\Signer\InvalidKeyProvided;
+use KaziRayhan\JWT\Signer\Key;
+use KaziRayhan\JWT\SodiumBase64Polyfill;
 use SensitiveParameter;
 use SplFileObject;
 use Throwable;

@@ -12,7 +12,7 @@ declare(strict_types=1);
  * @link https://github.com/web-token/jwt-framework/blob/v1.2/src/Component/Core/Util/ECSignature.php
  */
 
-namespace Lcobucci\JWT\Signer\Ecdsa;
+namespace KaziRayhan\JWT\Signer\Ecdsa;
 
 use function assert;
 use function bin2hex;

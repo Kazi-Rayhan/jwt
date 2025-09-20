@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Tests\Signer\Ecdsa;
+namespace KaziRayhan\JWT\Tests\Signer\Ecdsa;
 
-use Lcobucci\JWT\Signer\Ecdsa;
-use Lcobucci\JWT\Signer\Ecdsa\MultibyteStringConverter;
-use Lcobucci\JWT\Signer\InvalidKeyProvided;
-use Lcobucci\JWT\Signer\Key;
-use Lcobucci\JWT\Tests\Keys;
+use KaziRayhan\JWT\Signer\Ecdsa;
+use KaziRayhan\JWT\Signer\Ecdsa\MultibyteStringConverter;
+use KaziRayhan\JWT\Signer\InvalidKeyProvided;
+use KaziRayhan\JWT\Signer\Key;
+use KaziRayhan\JWT\Tests\Keys;
 use OpenSSLAsymmetricKey;
 use PHPUnit\Framework\Attributes as PHPUnit;
 use PHPUnit\Framework\TestCase;

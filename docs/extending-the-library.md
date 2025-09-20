@@ -11,10 +11,10 @@ These should enable people to easily customise our core components if they want 
 
 The token builder defines a fluent interface for plain token creation.
 
-To create your own builder of it you must implement the `Lcobucci\JWT\Builder` interface:
+To create your own builder of it you must implement the `KaziRayhan\JWT\Builder` interface:
 
 ```php
-use Lcobucci\JWT\Builder;
+use KaziRayhan\JWT\Builder;
 
 final class MyCustomTokenBuilder implements Builder
 {
@@ -25,9 +25,9 @@ final class MyCustomTokenBuilder implements Builder
 Then, register a custom factory in the [configuration object]:
 
 ```php
-use Lcobucci\JWT\Builder;
-use Lcobucci\JWT\ClaimsFormatter;
-use Lcobucci\JWT\Configuration;
+use KaziRayhan\JWT\Builder;
+use KaziRayhan\JWT\ClaimsFormatter;
+use KaziRayhan\JWT\Configuration;
 
 $config = $container->get(Configuration::class);
 assert($config instanceof Configuration);
@@ -49,8 +49,8 @@ By default, we provide formatters that:
 You may customise and even create your own formatters:
 
 ```php
-use Lcobucci\JWT\ClaimsFormatter;
-use Lcobucci\JWT\Configuration;
+use KaziRayhan\JWT\ClaimsFormatter;
+use KaziRayhan\JWT\Configuration;
 use Serializable;
 
 final class ClaimSerializer implements ClaimsFormatter
@@ -74,16 +74,16 @@ assert($config instanceof Configuration);
 $builder = $config->builder(new ClaimSerializer());
 ```
 
-The class `Lcobucci\JWT\Encoding\ChainedFormatter` allows for users to combine multiple formatters. 
+The class `KaziRayhan\JWT\Encoding\ChainedFormatter` allows for users to combine multiple formatters. 
 
 ## Parser
 
 The token parser defines how a JWT string should be converted into token objects.
 
-To create your own parser of it you must implement the `Lcobucci\JWT\Parser` interface:
+To create your own parser of it you must implement the `KaziRayhan\JWT\Parser` interface:
 
 ```php
-use Lcobucci\JWT\Parser;
+use KaziRayhan\JWT\Parser;
 
 final class MyCustomTokenParser implements Parser
 {
@@ -94,7 +94,7 @@ final class MyCustomTokenParser implements Parser
 Then register an instance in the [configuration object]:
 
 ```php
-use Lcobucci\JWT\Configuration;
+use KaziRayhan\JWT\Configuration;
 
 $config = $container->get(Configuration::class);
 assert($config instanceof Configuration);
@@ -106,10 +106,10 @@ $configuration = $configuration->withParser(new MyCustomTokenParser());
 
 The signer defines how to create and verify signatures.
 
-To create your own signer of it you must implement the `Lcobucci\JWT\Signer` interface:
+To create your own signer of it you must implement the `KaziRayhan\JWT\Signer` interface:
 
 ```php
-use Lcobucci\JWT\Signer;
+use KaziRayhan\JWT\Signer;
 
 final class SignerForAVeryCustomizedAlgorithm implements Signer
 {
@@ -123,10 +123,10 @@ Then pass an instance of it while creating an instance of the [configuration obj
 
 The key object is passed down to signers and provide the necessary information to create and verify signatures.
 
-To create your own signer of it you must implement the `Lcobucci\JWT\Signer\Key` interface:
+To create your own signer of it you must implement the `KaziRayhan\JWT\Signer\Key` interface:
 
 ```php
-use Lcobucci\JWT\Signer\Key;
+use KaziRayhan\JWT\Signer\Key;
 
 final class KeyWithSomeMagicalProperties implements Key
 {
@@ -138,10 +138,10 @@ final class KeyWithSomeMagicalProperties implements Key
 
 The token validator defines how to apply validation constraint to either validate or assert tokens.
 
-To create your own validator of it you must implement the `Lcobucci\JWT\Validator` interface:
+To create your own validator of it you must implement the `KaziRayhan\JWT\Validator` interface:
 
 ```php
-use Lcobucci\JWT\Validator;
+use KaziRayhan\JWT\Validator;
 
 final class MyCustomTokenValidator implements Validator
 {
@@ -152,7 +152,7 @@ final class MyCustomTokenValidator implements Validator
 Then register an instance in the [configuration object]:
 
 ```php
-use Lcobucci\JWT\Configuration;
+use KaziRayhan\JWT\Configuration;
 
 $config = $container->get(Configuration::class);
 assert($config instanceof Configuration);
@@ -165,13 +165,13 @@ $configuration = $configuration->withValidator(new MyCustomTokenValidator());
 A validation constraint define how one or more claims/headers should be validated.
 Custom validation constraints are handy to provide advanced rules for the registered claims or to validate private claims.
 
-To create your own implementation of constraint you must implement the `Lcobucci\JWT\Validation\Constraint` interface:
+To create your own implementation of constraint you must implement the `KaziRayhan\JWT\Validation\Constraint` interface:
 
 ```php
-use Lcobucci\JWT\Token;
-use Lcobucci\JWT\UnencryptedToken;
-use Lcobucci\JWT\Validation\Constraint;
-use Lcobucci\JWT\Validation\ConstraintViolation;
+use KaziRayhan\JWT\Token;
+use KaziRayhan\JWT\UnencryptedToken;
+use KaziRayhan\JWT\Validation\Constraint;
+use KaziRayhan\JWT\Validation\ConstraintViolation;
 
 final class SubjectMustBeAValidUser implements Constraint
 {

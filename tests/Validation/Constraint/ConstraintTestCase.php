@@ -1,16 +1,16 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Tests\Validation\Constraint;
+namespace KaziRayhan\JWT\Tests\Validation\Constraint;
 
 use Closure;
-use Lcobucci\JWT\Builder;
-use Lcobucci\JWT\JwtFacade;
-use Lcobucci\JWT\Signer;
-use Lcobucci\JWT\Token\DataSet;
-use Lcobucci\JWT\Token\Plain;
-use Lcobucci\JWT\Token\Signature;
-use Lcobucci\JWT\UnencryptedToken;
+use KaziRayhan\JWT\Builder;
+use KaziRayhan\JWT\JwtFacade;
+use KaziRayhan\JWT\Signer;
+use KaziRayhan\JWT\Token\DataSet;
+use KaziRayhan\JWT\Token\Plain;
+use KaziRayhan\JWT\Token\Signature;
+use KaziRayhan\JWT\UnencryptedToken;
 use PHPUnit\Framework\TestCase;
 
 abstract class ConstraintTestCase extends TestCase

@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Tests\Token;
+namespace KaziRayhan\JWT\Tests\Token;
 
 use DateTimeImmutable;
-use Lcobucci\JWT\Token\DataSet;
-use Lcobucci\JWT\Token\Plain;
-use Lcobucci\JWT\Token\RegisteredClaims;
-use Lcobucci\JWT\Token\Signature;
+use KaziRayhan\JWT\Token\DataSet;
+use KaziRayhan\JWT\Token\Plain;
+use KaziRayhan\JWT\Token\RegisteredClaims;
+use KaziRayhan\JWT\Token\Signature;
 use PHPUnit\Framework\Attributes as PHPUnit;
 use PHPUnit\Framework\TestCase;
 

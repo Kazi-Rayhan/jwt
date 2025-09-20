@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT;
+namespace KaziRayhan\JWT;
 
-use Lcobucci\JWT\Encoding\CannotEncodeContent;
+use KaziRayhan\JWT\Encoding\CannotEncodeContent;
 
 interface Encoder
 {

@@ -1,22 +1,22 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Tests;
+namespace KaziRayhan\JWT\Tests;
 
-use Lcobucci\JWT\Builder;
-use Lcobucci\JWT\ClaimsFormatter;
-use Lcobucci\JWT\Configuration;
-use Lcobucci\JWT\Decoder;
-use Lcobucci\JWT\Encoder;
-use Lcobucci\JWT\Encoding\ChainedFormatter;
-use Lcobucci\JWT\Encoding\JoseEncoder;
-use Lcobucci\JWT\Parser;
-use Lcobucci\JWT\Signer;
-use Lcobucci\JWT\Signer\Key\InMemory;
-use Lcobucci\JWT\Token\Builder as BuilderImpl;
-use Lcobucci\JWT\Token\Parser as ParserImpl;
-use Lcobucci\JWT\Validation\Constraint;
-use Lcobucci\JWT\Validator;
+use KaziRayhan\JWT\Builder;
+use KaziRayhan\JWT\ClaimsFormatter;
+use KaziRayhan\JWT\Configuration;
+use KaziRayhan\JWT\Decoder;
+use KaziRayhan\JWT\Encoder;
+use KaziRayhan\JWT\Encoding\ChainedFormatter;
+use KaziRayhan\JWT\Encoding\JoseEncoder;
+use KaziRayhan\JWT\Parser;
+use KaziRayhan\JWT\Signer;
+use KaziRayhan\JWT\Signer\Key\InMemory;
+use KaziRayhan\JWT\Token\Builder as BuilderImpl;
+use KaziRayhan\JWT\Token\Parser as ParserImpl;
+use KaziRayhan\JWT\Validation\Constraint;
+use KaziRayhan\JWT\Validator;
 use PHPUnit\Framework\Attributes as PHPUnit;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
@@ -26,7 +26,7 @@ use PHPUnit\Framework\TestCase;
 #[PHPUnit\UsesClass(InMemory::class)]
 #[PHPUnit\UsesClass(BuilderImpl::class)]
 #[PHPUnit\UsesClass(ParserImpl::class)]
-#[PHPUnit\UsesClass(\Lcobucci\JWT\Validation\Validator::class)]
+#[PHPUnit\UsesClass(\KaziRayhan\JWT\Validation\Validator::class)]
 final class ConfigurationTest extends TestCase
 {
     private Parser&MockObject $parser;

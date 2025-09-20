@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Tests;
+namespace KaziRayhan\JWT\Tests;
 
-use Lcobucci\JWT\Signer\Key;
+use KaziRayhan\JWT\Signer\Key;
 use PHPUnit\Framework\Attributes as PHPUnit;
 
 trait Keys

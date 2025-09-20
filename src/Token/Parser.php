@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Token;
+namespace KaziRayhan\JWT\Token;
 
 use DateTimeImmutable;
-use Lcobucci\JWT\Decoder;
-use Lcobucci\JWT\Parser as ParserInterface;
-use Lcobucci\JWT\Token as TokenInterface;
+use KaziRayhan\JWT\Decoder;
+use KaziRayhan\JWT\Parser as ParserInterface;
+use KaziRayhan\JWT\Token as TokenInterface;
 
 use function array_key_exists;
 use function count;

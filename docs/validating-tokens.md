@@ -2,7 +2,7 @@
 
 To validate a token you must create a new validator and assert or validate a token.
 
-## Using `Lcobucci\JWT\Validator#assert()`
+## Using `KaziRayhan\JWT\Validator#assert()`
 
 This method goes through every single constraint in the set, groups all the violations, and throws an exception with the grouped violations:
 
@@ -10,11 +10,11 @@ This method goes through every single constraint in the set, groups all the viol
 <?php
 declare(strict_types=1);
 
-use Lcobucci\JWT\Encoding\JoseEncoder;
-use Lcobucci\JWT\Token\Parser;
-use Lcobucci\JWT\Validation\Constraint\RelatedTo;
-use Lcobucci\JWT\Validation\RequiredConstraintsViolated;
-use Lcobucci\JWT\Validation\Validator;
+use KaziRayhan\JWT\Encoding\JoseEncoder;
+use KaziRayhan\JWT\Token\Parser;
+use KaziRayhan\JWT\Validation\Constraint\RelatedTo;
+use KaziRayhan\JWT\Validation\RequiredConstraintsViolated;
+use KaziRayhan\JWT\Validation\Validator;
 
 require 'vendor/autoload.php';
 
@@ -37,7 +37,7 @@ try {
 }
 ```
 
-## Using `Lcobucci\JWT\Validator#validate()`
+## Using `KaziRayhan\JWT\Validator#validate()`
 
 The difference here is that we'll always get a `boolean` result and stop in the very first violation:
 
@@ -45,10 +45,10 @@ The difference here is that we'll always get a `boolean` result and stop in the 
 <?php
 declare(strict_types=1);
 
-use Lcobucci\JWT\Encoding\JoseEncoder;
-use Lcobucci\JWT\Token\Parser;
-use Lcobucci\JWT\Validation\Constraint\RelatedTo;
-use Lcobucci\JWT\Validation\Validator;
+use KaziRayhan\JWT\Encoding\JoseEncoder;
+use KaziRayhan\JWT\Token\Parser;
+use KaziRayhan\JWT\Validation\Constraint\RelatedTo;
+use KaziRayhan\JWT\Validation\Validator;
 
 require 'vendor/autoload.php';
 
@@ -80,16 +80,16 @@ if (! $validator->validate($token, new RelatedTo('1234567890'))) {
 
 This library provides the following constraints:
 
-* `Lcobucci\JWT\Validation\Constraint\IdentifiedBy`: verifies if the claim `jti` matches the expected value
-* `Lcobucci\JWT\Validation\Constraint\IssuedBy`: verifies if the claim `iss` is listed as expected values
-* `Lcobucci\JWT\Validation\Constraint\PermittedFor`: verifies if the claim `aud` contains the expected value
-* `Lcobucci\JWT\Validation\Constraint\RelatedTo`: verifies if the claim `sub` matches the expected value
-* `Lcobucci\JWT\Validation\Constraint\SignedWith`: verifies if the token was signed with the expected signer and key
-* `Lcobucci\JWT\Validation\Constraint\SignedWithOneInSet`: verifies the token signature against multiple `SignedWithUntilDate` constraints
-* `Lcobucci\JWT\Validation\Constraint\SignedWithUntilDate`: verifies if the token was signed with the expected signer and key (until a certain date)
-* `Lcobucci\JWT\Validation\Constraint\StrictValidAt`: verifies presence and validity of the claims `iat`, `nbf`, and `exp` (supports leeway configuration)
-* `Lcobucci\JWT\Validation\Constraint\LooseValidAt`: verifies the claims `iat`, `nbf`, and `exp`, when present (supports leeway configuration)
-* `Lcobucci\JWT\Validation\Constraint\HasClaimWithValue`: verifies that a **custom claim** has the expected value (not recommended when comparing cryptographic hashes)
-* `Lcobucci\JWT\Validation\Constraint\HasClaim`: verifies that a **custom claim** is present
+* `KaziRayhan\JWT\Validation\Constraint\IdentifiedBy`: verifies if the claim `jti` matches the expected value
+* `KaziRayhan\JWT\Validation\Constraint\IssuedBy`: verifies if the claim `iss` is listed as expected values
+* `KaziRayhan\JWT\Validation\Constraint\PermittedFor`: verifies if the claim `aud` contains the expected value
+* `KaziRayhan\JWT\Validation\Constraint\RelatedTo`: verifies if the claim `sub` matches the expected value
+* `KaziRayhan\JWT\Validation\Constraint\SignedWith`: verifies if the token was signed with the expected signer and key
+* `KaziRayhan\JWT\Validation\Constraint\SignedWithOneInSet`: verifies the token signature against multiple `SignedWithUntilDate` constraints
+* `KaziRayhan\JWT\Validation\Constraint\SignedWithUntilDate`: verifies if the token was signed with the expected signer and key (until a certain date)
+* `KaziRayhan\JWT\Validation\Constraint\StrictValidAt`: verifies presence and validity of the claims `iat`, `nbf`, and `exp` (supports leeway configuration)
+* `KaziRayhan\JWT\Validation\Constraint\LooseValidAt`: verifies the claims `iat`, `nbf`, and `exp`, when present (supports leeway configuration)
+* `KaziRayhan\JWT\Validation\Constraint\HasClaimWithValue`: verifies that a **custom claim** has the expected value (not recommended when comparing cryptographic hashes)
+* `KaziRayhan\JWT\Validation\Constraint\HasClaim`: verifies that a **custom claim** is present
 
 You may also create your [own validation constraints](extending-the-library.md#validation-constraints).

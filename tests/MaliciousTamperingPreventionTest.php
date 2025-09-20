@@ -1,22 +1,22 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Tests;
+namespace KaziRayhan\JWT\Tests;
 
-use Lcobucci\JWT\Configuration;
-use Lcobucci\JWT\Encoding;
-use Lcobucci\JWT\Encoding\JoseEncoder;
-use Lcobucci\JWT\Signer\Ecdsa;
-use Lcobucci\JWT\Signer\Ecdsa\Sha512 as ES512;
-use Lcobucci\JWT\Signer\Hmac;
-use Lcobucci\JWT\Signer\Hmac\Sha256 as HS512;
-use Lcobucci\JWT\Signer\Key\InMemory;
-use Lcobucci\JWT\SodiumBase64Polyfill;
-use Lcobucci\JWT\Token;
-use Lcobucci\JWT\Token\Plain;
-use Lcobucci\JWT\Validation\Constraint\SignedWith;
-use Lcobucci\JWT\Validation\ConstraintViolation;
-use Lcobucci\JWT\Validation\Validator;
+use KaziRayhan\JWT\Configuration;
+use KaziRayhan\JWT\Encoding;
+use KaziRayhan\JWT\Encoding\JoseEncoder;
+use KaziRayhan\JWT\Signer\Ecdsa;
+use KaziRayhan\JWT\Signer\Ecdsa\Sha512 as ES512;
+use KaziRayhan\JWT\Signer\Hmac;
+use KaziRayhan\JWT\Signer\Hmac\Sha256 as HS512;
+use KaziRayhan\JWT\Signer\Key\InMemory;
+use KaziRayhan\JWT\SodiumBase64Polyfill;
+use KaziRayhan\JWT\Token;
+use KaziRayhan\JWT\Token\Plain;
+use KaziRayhan\JWT\Validation\Constraint\SignedWith;
+use KaziRayhan\JWT\Validation\ConstraintViolation;
+use KaziRayhan\JWT\Validation\Validator;
 use PHPUnit\Framework\Attributes as PHPUnit;
 use PHPUnit\Framework\TestCase;
 

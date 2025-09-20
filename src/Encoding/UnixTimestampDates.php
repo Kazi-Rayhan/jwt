@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Encoding;
+namespace KaziRayhan\JWT\Encoding;
 
 use DateTimeImmutable;
-use Lcobucci\JWT\ClaimsFormatter;
-use Lcobucci\JWT\Token\RegisteredClaims;
+use KaziRayhan\JWT\ClaimsFormatter;
+use KaziRayhan\JWT\Token\RegisteredClaims;
 
 use function array_key_exists;
 

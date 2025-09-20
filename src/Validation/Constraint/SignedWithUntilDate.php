@@ -1,14 +1,14 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Validation\Constraint;
+namespace KaziRayhan\JWT\Validation\Constraint;
 
 use DateTimeImmutable;
 use DateTimeInterface;
-use Lcobucci\JWT\Signer;
-use Lcobucci\JWT\Token;
-use Lcobucci\JWT\Validation\ConstraintViolation;
-use Lcobucci\JWT\Validation\SignedWith as SignedWithInterface;
+use KaziRayhan\JWT\Signer;
+use KaziRayhan\JWT\Token;
+use KaziRayhan\JWT\Validation\ConstraintViolation;
+use KaziRayhan\JWT\Validation\SignedWith as SignedWithInterface;
 use Psr\Clock\ClockInterface;
 
 final readonly class SignedWithUntilDate implements SignedWithInterface

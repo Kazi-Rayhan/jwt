@@ -1,14 +1,14 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Tests\Validation\Constraint;
+namespace KaziRayhan\JWT\Tests\Validation\Constraint;
 
 use DateInterval;
-use Lcobucci\Clock\Clock;
-use Lcobucci\JWT\Token;
-use Lcobucci\JWT\Validation\Constraint;
-use Lcobucci\JWT\Validation\Constraint\LooseValidAt;
-use Lcobucci\JWT\Validation\ConstraintViolation;
+use KaziRayhan\Clock\Clock;
+use KaziRayhan\JWT\Token;
+use KaziRayhan\JWT\Validation\Constraint;
+use KaziRayhan\JWT\Validation\Constraint\LooseValidAt;
+use KaziRayhan\JWT\Validation\ConstraintViolation;
 use PHPUnit\Framework\Attributes as PHPUnit;
 
 #[PHPUnit\CoversClass(Constraint\LeewayCannotBeNegative::class)]

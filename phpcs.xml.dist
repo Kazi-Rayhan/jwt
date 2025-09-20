@@ -13,7 +13,7 @@
     <file>src</file>
     <file>tests</file>
 
-    <rule ref="Lcobucci" />
+    <rule ref="KaziRayhan" />
 
     <rule ref="SlevomatCodingStandard.Functions.UnusedParameter">
         <exclude-pattern>tests</exclude-pattern>

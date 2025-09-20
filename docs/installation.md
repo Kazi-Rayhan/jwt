@@ -2,10 +2,10 @@
 
 This package is available on [Packagist] and you can install it using [Composer].
 
-By running the following command you'll add `lcobucci/jwt` as a dependency to your project:
+By running the following command you'll add `KaziRayhan/jwt` as a dependency to your project:
 
 ```sh
-composer require lcobucci/jwt
+composer require KaziRayhan/jwt
 ```
 
 ## Autoloading
@@ -22,6 +22,6 @@ require 'vendor/autoload.php';
 !!! Tip
     If you're not familiar with how [composer] works, we highly recommend you to take some time to read it's documentation - especially the [autoloading section].
 
-[Packagist]: https://packagist.org/packages/lcobucci/jwt
+[Packagist]: https://packagist.org/packages/KaziRayhan/jwt
 [Composer]: https://getcomposer.org
 [autoloading section]: https://getcomposer.org/doc/01-basic-usage.md#autoloading

@@ -24,8 +24,8 @@
     },
     "require-dev": {
         "infection/infection": "^0.31.1",
-        "lcobucci/clock": "^3.3.1",
-        "lcobucci/coding-standard": "^11.1",
+        "KaziRayhan/clock": "^3.3.1",
+        "KaziRayhan/coding-standard": "^11.1",
         "phpbench/phpbench": "^1.4.1",
         "phpstan/extension-installer": "^1.4.3",
         "phpstan/phpstan": "^2.1.22",
@@ -35,16 +35,16 @@
         "phpunit/phpunit": "^12.3.0"
     },
     "suggest": {
-        "lcobucci/clock": ">= 3.2"
+        "KaziRayhan/clock": ">= 3.2"
     },
     "autoload": {
         "psr-4": {
-            "Lcobucci\\JWT\\": "src"
+            "KaziRayhan\\JWT\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Lcobucci\\JWT\\Tests\\": "tests"
+            "KaziRayhan\\JWT\\Tests\\": "tests"
         }
     },
     "config": {

@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Tests\Encoding;
+namespace KaziRayhan\JWT\Tests\Encoding;
 
-use Lcobucci\JWT\Encoding\UnifyAudience;
-use Lcobucci\JWT\Token\RegisteredClaims;
+use KaziRayhan\JWT\Encoding\UnifyAudience;
+use KaziRayhan\JWT\Token\RegisteredClaims;
 use PHPUnit\Framework\Attributes as PHPUnit;
 use PHPUnit\Framework\TestCase;
 

@@ -1,6 +1,6 @@
 # Configuration
 
-In order to simplify the setup of the library, we provide the class `Lcobucci\JWT\Configuration`.
+In order to simplify the setup of the library, we provide the class `KaziRayhan\JWT\Configuration`.
 
 It's meant for:
 
@@ -11,7 +11,7 @@ It's meant for:
 
 ## Initialisation
 
-The `Lcobucci\JWT\Signer\Key\InMemory` object is used for symmetric/asymmetric signature.
+The `KaziRayhan\JWT\Signer\Key\InMemory` object is used for symmetric/asymmetric signature.
 
 To initialise it, you can pass the key content as a plain text:
 
@@ -19,7 +19,7 @@ To initialise it, you can pass the key content as a plain text:
 <?php
 declare(strict_types=1);
 
-use Lcobucci\JWT\Signer\Key\InMemory;
+use KaziRayhan\JWT\Signer\Key\InMemory;
 
 require 'vendor/autoload.php';
 
@@ -32,7 +32,7 @@ Provide a base64 encoded string:
 <?php
 declare(strict_types=1);
 
-use Lcobucci\JWT\Signer\Key\InMemory;
+use KaziRayhan\JWT\Signer\Key\InMemory;
 
 require 'vendor/autoload.php';
 
@@ -45,7 +45,7 @@ Or provide a file path:
 <?php
 declare(strict_types=1);
 
-use Lcobucci\JWT\Signer\Key\InMemory;
+use KaziRayhan\JWT\Signer\Key\InMemory;
 
 require 'vendor/autoload.php';
 
@@ -66,9 +66,9 @@ This means that it's really important that your key **remains secret**.
 <?php
 declare(strict_types=1);
 
-use Lcobucci\JWT\Configuration;
-use Lcobucci\JWT\Signer;
-use Lcobucci\JWT\Signer\Key\InMemory;
+use KaziRayhan\JWT\Configuration;
+use KaziRayhan\JWT\Signer;
+use KaziRayhan\JWT\Signer\Key\InMemory;
 
 require 'vendor/autoload.php';
 
@@ -90,9 +90,9 @@ This means that it's fine to distribute your **public key**. However, the **priv
 <?php
 declare(strict_types=1);
 
-use Lcobucci\JWT\Configuration;
-use Lcobucci\JWT\Signer;
-use Lcobucci\JWT\Signer\Key\InMemory;
+use KaziRayhan\JWT\Configuration;
+use KaziRayhan\JWT\Signer;
+use KaziRayhan\JWT\Signer\Key\InMemory;
 
 require 'vendor/autoload.php';
 
@@ -107,7 +107,7 @@ $configuration = Configuration::forAsymmetricSigner(
 
 ## Customisation
 
-By using the setters of the `Lcobucci\JWT\Configuration` you may customise the setup of this library.
+By using the setters of the `KaziRayhan\JWT\Configuration` you may customise the setup of this library.
 
 !!! Important
     If you want to use a customised configuration, please make sure you call the setters before of invoking any getter.
@@ -122,12 +122,12 @@ It's useful when you want to provide a [custom Builder](extending-the-library.md
 <?php
 declare(strict_types=1);
 
-use Lcobucci\JWT\Builder;
-use Lcobucci\JWT\ClaimsFormatter;
-use Lcobucci\JWT\Configuration;
-use Lcobucci\JWT\Encoding\JoseEncoder;
-use Lcobucci\JWT\Signer;
-use Lcobucci\JWT\Signer\Key\InMemory;
+use KaziRayhan\JWT\Builder;
+use KaziRayhan\JWT\ClaimsFormatter;
+use KaziRayhan\JWT\Configuration;
+use KaziRayhan\JWT\Encoding\JoseEncoder;
+use KaziRayhan\JWT\Signer;
+use KaziRayhan\JWT\Signer\Key\InMemory;
 
 require 'vendor/autoload.php';
 
@@ -153,9 +153,9 @@ It's useful when you want to provide a [custom Parser](extending-the-library.md#
 <?php
 declare(strict_types=1);
 
-use Lcobucci\JWT\Configuration;
-use Lcobucci\JWT\Signer;
-use Lcobucci\JWT\Signer\Key\InMemory;
+use KaziRayhan\JWT\Configuration;
+use KaziRayhan\JWT\Signer;
+use KaziRayhan\JWT\Signer\Key\InMemory;
 
 require 'vendor/autoload.php';
 
@@ -177,9 +177,9 @@ It's useful when you want to provide a [custom Validator](extending-the-library.
 <?php
 declare(strict_types=1);
 
-use Lcobucci\JWT\Configuration;
-use Lcobucci\JWT\Signer;
-use Lcobucci\JWT\Signer\Key\InMemory;
+use KaziRayhan\JWT\Configuration;
+use KaziRayhan\JWT\Signer;
+use KaziRayhan\JWT\Signer\Key\InMemory;
 
 require 'vendor/autoload.php';
 
@@ -200,14 +200,14 @@ It configures which are the base constraints to be used during validation.
 <?php
 declare(strict_types=1);
 
-use Lcobucci\Clock\SystemClock; // If you prefer, other PSR-20 implementations may also be used
+use KaziRayhan\Clock\SystemClock; // If you prefer, other PSR-20 implementations may also be used
                                 // (https://packagist.org/providers/psr/clock-implementation)
-use Lcobucci\JWT\Configuration;
-use Lcobucci\JWT\Signer;
-use Lcobucci\JWT\Signer\Key\InMemory;
-use Lcobucci\JWT\Validation\Constraint\IssuedBy;
-use Lcobucci\JWT\Validation\Constraint\SignedWith;
-use Lcobucci\JWT\Validation\Constraint\StrictValidAt;
+use KaziRayhan\JWT\Configuration;
+use KaziRayhan\JWT\Signer;
+use KaziRayhan\JWT\Signer\Key\InMemory;
+use KaziRayhan\JWT\Validation\Constraint\IssuedBy;
+use KaziRayhan\JWT\Validation\Constraint\SignedWith;
+use KaziRayhan\JWT\Validation\Constraint\StrictValidAt;
 
 require 'vendor/autoload.php';
 
@@ -229,10 +229,10 @@ Once you've made all the necessary configuration you can pass the configuration 
 
 These are the available getters:
 
-* `Lcobucci\JWT\Configuration#builder()`: retrieves the token builder (always creating a new instance)
-* `Lcobucci\JWT\Configuration#parser()`: retrieves the token parser
-* `Lcobucci\JWT\Configuration#signer()`: retrieves the signer
-* `Lcobucci\JWT\Configuration#signingKey()`: retrieves the key for signature creation
-* `Lcobucci\JWT\Configuration#verificationKey()`: retrieves the key for signature verification
-* `Lcobucci\JWT\Configuration#validator()`: retrieves the token validator
-* `Lcobucci\JWT\Configuration#validationConstraints()`: retrieves the default set of validation constraints
+* `KaziRayhan\JWT\Configuration#builder()`: retrieves the token builder (always creating a new instance)
+* `KaziRayhan\JWT\Configuration#parser()`: retrieves the token parser
+* `KaziRayhan\JWT\Configuration#signer()`: retrieves the signer
+* `KaziRayhan\JWT\Configuration#signingKey()`: retrieves the key for signature creation
+* `KaziRayhan\JWT\Configuration#verificationKey()`: retrieves the key for signature verification
+* `KaziRayhan\JWT\Configuration#validator()`: retrieves the token validator
+* `KaziRayhan\JWT\Configuration#validationConstraints()`: retrieves the default set of validation constraints

@@ -1,23 +1,23 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Tests;
+namespace KaziRayhan\JWT\Tests;
 
 use DateTimeImmutable;
-use Lcobucci\Clock\FrozenClock;
-use Lcobucci\JWT\Configuration;
-use Lcobucci\JWT\Encoding;
-use Lcobucci\JWT\Signer\Key\InMemory;
-use Lcobucci\JWT\SodiumBase64Polyfill;
-use Lcobucci\JWT\Token;
-use Lcobucci\JWT\Validation\Constraint;
-use Lcobucci\JWT\Validation\Constraint\IdentifiedBy;
-use Lcobucci\JWT\Validation\Constraint\IssuedBy;
-use Lcobucci\JWT\Validation\Constraint\LooseValidAt;
-use Lcobucci\JWT\Validation\Constraint\PermittedFor;
-use Lcobucci\JWT\Validation\ConstraintViolation;
-use Lcobucci\JWT\Validation\RequiredConstraintsViolated;
-use Lcobucci\JWT\Validation\Validator;
+use KaziRayhan\Clock\FrozenClock;
+use KaziRayhan\JWT\Configuration;
+use KaziRayhan\JWT\Encoding;
+use KaziRayhan\JWT\Signer\Key\InMemory;
+use KaziRayhan\JWT\SodiumBase64Polyfill;
+use KaziRayhan\JWT\Token;
+use KaziRayhan\JWT\Validation\Constraint;
+use KaziRayhan\JWT\Validation\Constraint\IdentifiedBy;
+use KaziRayhan\JWT\Validation\Constraint\IssuedBy;
+use KaziRayhan\JWT\Validation\Constraint\LooseValidAt;
+use KaziRayhan\JWT\Validation\Constraint\PermittedFor;
+use KaziRayhan\JWT\Validation\ConstraintViolation;
+use KaziRayhan\JWT\Validation\RequiredConstraintsViolated;
+use KaziRayhan\JWT\Validation\Validator;
 use PHPUnit\Framework\Attributes as PHPUnit;
 use PHPUnit\Framework\TestCase;
 

@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Token;
+namespace KaziRayhan\JWT\Token;
 
 use InvalidArgumentException;
-use Lcobucci\JWT\Exception;
+use KaziRayhan\JWT\Exception;
 
 final class UnsupportedHeaderFound extends InvalidArgumentException implements Exception
 {

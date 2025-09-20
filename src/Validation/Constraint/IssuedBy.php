@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Validation\Constraint;
+namespace KaziRayhan\JWT\Validation\Constraint;
 
-use Lcobucci\JWT\Token;
-use Lcobucci\JWT\Validation\Constraint;
-use Lcobucci\JWT\Validation\ConstraintViolation;
+use KaziRayhan\JWT\Token;
+use KaziRayhan\JWT\Validation\Constraint;
+use KaziRayhan\JWT\Validation\ConstraintViolation;
 
 final readonly class IssuedBy implements Constraint
 {

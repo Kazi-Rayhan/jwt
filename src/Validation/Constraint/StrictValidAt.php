@@ -1,14 +1,14 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Validation\Constraint;
+namespace KaziRayhan\JWT\Validation\Constraint;
 
 use DateInterval;
 use DateTimeInterface;
-use Lcobucci\JWT\Token;
-use Lcobucci\JWT\UnencryptedToken;
-use Lcobucci\JWT\Validation\ConstraintViolation;
-use Lcobucci\JWT\Validation\ValidAt as ValidAtInterface;
+use KaziRayhan\JWT\Token;
+use KaziRayhan\JWT\UnencryptedToken;
+use KaziRayhan\JWT\Validation\ConstraintViolation;
+use KaziRayhan\JWT\Validation\ValidAt as ValidAtInterface;
 use Psr\Clock\ClockInterface as Clock;
 
 final readonly class StrictValidAt implements ValidAtInterface

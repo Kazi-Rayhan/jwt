@@ -1,14 +1,14 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Tests\Validation;
+namespace KaziRayhan\JWT\Tests\Validation;
 
-use Lcobucci\JWT\Token;
-use Lcobucci\JWT\Validation\Constraint;
-use Lcobucci\JWT\Validation\ConstraintViolation;
-use Lcobucci\JWT\Validation\NoConstraintsGiven;
-use Lcobucci\JWT\Validation\RequiredConstraintsViolated;
-use Lcobucci\JWT\Validation\Validator;
+use KaziRayhan\JWT\Token;
+use KaziRayhan\JWT\Validation\Constraint;
+use KaziRayhan\JWT\Validation\ConstraintViolation;
+use KaziRayhan\JWT\Validation\NoConstraintsGiven;
+use KaziRayhan\JWT\Validation\RequiredConstraintsViolated;
+use KaziRayhan\JWT\Validation\Validator;
 use PHPUnit\Framework\Attributes as PHPUnit;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;

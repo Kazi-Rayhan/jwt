@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace Lcobucci\JWT\Tests;
+namespace KaziRayhan\JWT\Tests;
 
-use Lcobucci\JWT\Signer;
-use Lcobucci\JWT\Signer\Key;
+use KaziRayhan\JWT\Signer;
+use KaziRayhan\JWT\Signer\Key;
 
 final readonly class KeyDumpSigner implements Signer
 {
