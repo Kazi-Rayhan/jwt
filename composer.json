@@ -1,5 +1,5 @@
 {
-    "name": "lcobucci/jwt",
+    "name": "Kazi-Rayhan/jwt",
     "description": "A simple library to work with JSON Web Token and JSON Web Signature",
     "license": [
         "BSD-3-Clause"
@@ -11,8 +11,8 @@
     ],
     "authors": [
         {
-            "name": "Luís Cobucci",
-            "email": "lcobucci@gmail.com",
+            "name": "Kazi Rayhan",
+            "email": "thisiskazi@gmail.com",
             "role": "Developer"
         }
     ],
