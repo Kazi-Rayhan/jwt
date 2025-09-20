@@ -24,8 +24,8 @@
     },
     "require-dev": {
         "infection/infection": "^0.31.1",
-        "KaziRayhan/clock": "^3.3.1",
-        "KaziRayhan/coding-standard": "^11.1",
+        "Lcobucci/clock/clock": "^3.3.1",
+        "Lcobucci/clock/coding-standard": "^11.1",
         "phpbench/phpbench": "^1.4.1",
         "phpstan/extension-installer": "^1.4.3",
         "phpstan/phpstan": "^2.1.22",
@@ -35,7 +35,7 @@
         "phpunit/phpunit": "^12.3.0"
     },
     "suggest": {
-        "KaziRayhan/clock": ">= 3.2"
+        "Lcobucci/clock": ">= 3.2"
     },
     "autoload": {
         "psr-4": {
