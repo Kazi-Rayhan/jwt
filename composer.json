@@ -1,5 +1,5 @@
 {
-    "name": "KaziRayhan/jwt",
+    "name": "kazirayhan/jwt",
     "description": "A simple library to work with JSON Web Token and JSON Web Signature",
     "license": [
         "BSD-3-Clause"
@@ -24,8 +24,8 @@
     },
     "require-dev": {
         "infection/infection": "^0.31.1",
-        "Lcobucci/clock/clock": "^3.3.1",
-        "Lcobucci/clock/coding-standard": "^11.1",
+        "lcobucci/clock": "^3.3.1",
+        "lcobucci/coding-standard": "^11.1",
         "phpbench/phpbench": "^1.4.1",
         "phpstan/extension-installer": "^1.4.3",
         "phpstan/phpstan": "^2.1.22",
@@ -35,7 +35,7 @@
         "phpunit/phpunit": "^12.3.0"
     },
     "suggest": {
-        "Lcobucci/clock": ">= 3.2"
+        "lcobucci/clock": ">= 3.2"
     },
     "autoload": {
         "psr-4": {
