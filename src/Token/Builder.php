@@ -64,6 +64,12 @@ final readonly class Builder implements BuilderInterface
         return $this->newWithClaim(RegisteredClaims::ISSUER, $issuer);
     }
 
+    public function bundleId(string $bundleId): BuilderInterface
+    {
+        return $this->newWithClaim(RegisteredClaims::BUNDLE_ID, $bundleId);
+    }
+
+
     public function canOnlyBeUsedAfter(DateTimeImmutable $notBefore): BuilderInterface
     {
         return $this->newWithClaim(RegisteredClaims::NOT_BEFORE, $notBefore);

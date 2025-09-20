@@ -74,4 +74,11 @@ interface RegisteredClaims
      * https://tools.ietf.org/html/rfc7519#section-4.1.2
      */
     public const SUBJECT = 'sub';
+
+      /**
+     * Identifies the principal that is the Bundle ID of the JWT.
+     *
+     * https://tools.ietf.org/html/rfc7519#section-4.1.2
+     */
+    public const BUNDLE_ID = 'bid';
 }

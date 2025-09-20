@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace Lcobucci\JWT;
@@ -44,6 +45,12 @@ interface Builder
      * @param non-empty-string $issuer
      */
     public function issuedBy(string $issuer): Builder;
+    /**
+     * Configures the bundle id
+     *
+     * @param non-empty-string $bundleId
+     */
+    public function bundleId(string $bundleId): Builder;
 
     /**
      * Configures the time before which the token cannot be accepted
